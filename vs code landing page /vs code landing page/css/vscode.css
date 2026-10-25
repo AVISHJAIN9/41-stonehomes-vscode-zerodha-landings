@@ -1,0 +1,33 @@
+:root{--vscode-bg:#0b1221;--vscode-panel:#0f1724;--accent:#0ea5a4}
+.vscode-hero{padding:3.5rem 0;background:linear-gradient(180deg,var(--vscode-bg) 0%,#071026 100%);color:#e6eef6}
+.v-hero-grid{display:grid;grid-template-columns:1fr 480px;gap:2rem;align-items:center}
+.v-hero-content h1{font-family:Poppins,Inter,system-ui;font-size:2.25rem;margin:0 0 .5rem}
+.editor-mock{background:var(--vscode-panel);padding:1rem;border-radius:10px;box-shadow:0 18px 50px rgba(2,6,23,0.6)}
+.editor-toolbar{display:flex;align-items:center;gap:.5rem;padding:.3rem}
+.editor-toolbar .dot{width:10px;height:10px;border-radius:50%;display:inline-block}
+.editor-toolbar .dot.red{background:#ff5f56}
+.editor-toolbar .dot.yellow{background:#ffbd2e}
+.editor-toolbar .dot.green{background:#27c93f}
+.editor-toolbar .title{color:#cbd5e1;margin-left:.5rem}
+.code-block{background:transparent;color:#dbeafe;padding:1rem;border-radius:6px;margin:0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.platforms{display:flex;gap:1rem;margin:1rem 0 0;padding:0;list-style:none}
+@media(max-width:860px){.v-hero-grid{grid-template-columns:1fr}.editor-mock{margin-top:1rem}}
+
+/* hero enhancements */
+.v-hero-content .eyebrow{color:#9fb3c8;font-size:.9rem;margin-bottom:.4rem}
+.v-hero-content h1{font-size:2rem}
+.v-hero-content .lead{color:#c3d7ea;margin-bottom:1rem}
+.hero-cta-row{display:flex;gap:.75rem;align-items:center;margin-bottom:.75rem}
+.download-btn{background:var(--accent);color:#072124;padding:.7rem 1rem;border-radius:8px}
+.secondary-btn{background:transparent;border:1px solid rgba(255,255,255,0.08);color:#e6eef6;padding:.6rem .9rem;border-radius:8px}
+.platforms .plat{background:rgba(255,255,255,0.04);padding:.35rem .65rem;border-radius:6px}
+
+/* testimonial */
+.testimonial blockquote{background:rgba(255,255,255,0.03);padding:1rem;border-left:4px solid rgba(14,165,164,0.15);border-radius:8px;margin:2rem 0}
+.testimonial footer{color:#a9c3d4;margin-top:.5rem;font-size:.95rem}
+
+@media(max-width:860px){
+	.v-hero-content h1{font-size:1.4rem}
+	.v-hero-grid{grid-template-columns:1fr}
+	.hero-cta-row{flex-direction:column;align-items:flex-start}
+}

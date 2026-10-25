@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Code Studio — Lightweight IDE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="css/vscode.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="container header-row">
+  <a class="brand" href="../index.html">CodeStudio</a>
+      <button class="nav-toggle" aria-controls="nav" aria-expanded="false">Menu</button>
+      <nav id="nav" class="site-nav" aria-label="Main" aria-hidden="true">
+        <ul>
+          <li><a href="../features.html">Features</a></li>
+          <li><a href="../pricing.html">Pricing</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a class="btn" href="../signup.html">Sign up</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="vscode-hero">
+      <div class="container">
+        <div class="v-hero-grid">
+          <div class="v-hero-content">
+            <p class="eyebrow">Editor for modern development</p>
+            <h1>CodeStudio — fast, extensible, delightful</h1>
+            <p class="lead">A lightweight, extensible code editor with a powerful ecosystem — tuned for productivity and speed.</p>
+            <div class="hero-cta-row">
+              <a class="btn btn-primary download-btn" href="#download" role="button">Download CodeStudio</a>
+              <a class="btn secondary-btn" href="#learn">Why CodeStudio</a>
+            </div>
+            <ul class="platforms" aria-hidden="true">
+              <li class="plat">Windows</li>
+              <li class="plat">macOS</li>
+              <li class="plat">Linux</li>
+            </ul>
+          </div>
+          <div class="v-hero-media" aria-hidden="true">
+            <div class="editor-mock">
+              <div class="editor-toolbar">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="title">app.js — CodeStudio</span>
+              </div>
+              <pre class="code-block"><code>function hello(){
+  console.log('hello world');
+}
+
+hello();</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="learn" class="container">
+      <h2>Why CodeStudio</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Extensible</h3>
+          <p>Plugins and themes to tailor your workflow.</p>
+        </article>
+        <article class="card">
+          <h3>Fast</h3>
+          <p>Quick startup and snappy UI for large codebases.</p>
+        </article>
+        <article class="card">
+          <h3>Integrated</h3>
+          <p>Built-in terminal and debugger.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="testimonial container">
+      <blockquote>
+        <p>"CodeStudio is blisteringly fast — I open projects and start coding instantly. The extension ecosystem is surprisingly powerful."</p>
+        <footer>— Priya R., frontend engineer</footer>
+      </blockquote>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> CodeStudio</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js" defer></script>
+</body>
+</html>
