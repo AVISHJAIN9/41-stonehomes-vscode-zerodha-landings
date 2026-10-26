@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Simple, fast trading UI — lightweight web client for active traders.">
+  <title>WanderZ — Trade smarter</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header" role="banner">
+    <div class="container header-row">
+      <a class="brand" href="#">WanderZ</a>
+      <button class="nav-toggle" aria-controls="nav" aria-expanded="false" aria-label="Open menu">Menu</button>
+      <nav id="nav" class="site-nav" aria-label="Main" aria-hidden="true">
+        <ul>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a class="btn" href="signup.html">Sign up</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">For active traders</p>
+          <h1>Trade smarter, not louder</h1>
+          <p class="lead">Lightweight web trading with clear charts and instant order execution — designed for speed and clarity.</p>
+          <p class="hero-cta"><a class="btn btn-primary" href="signup.html">Create account</a> <a class="link-ghost" href="features.html">See features</a></p>
+          <p class="micro">No credit card. Free to start.</p>
+        </div>
+        <div class="hero-media" aria-hidden="true">
+          <img src="zerodha2nd.png" alt="App screenshot showing charts and orders" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features container">
+      <h2>Features</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="zerodha1st.png" alt="Live chart example" loading="lazy">
+          <h3>Live charts</h3>
+          <p>High-performance, low-latency charts with interval controls.</p>
+        </article>
+        <article class="card">
+          <img src="zerodha3rd.png" alt="Order flow" loading="lazy">
+          <h3>Simple orders</h3>
+          <p>Place orders in a few clicks with predictable behaviour.</p>
+        </article>
+        <article class="card">
+          <h3>Secure</h3>
+          <p>Two-factor authentication and encrypted storage keep your account safe.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="signup" class="signup container">
+      <h2>Create your account</h2>
+      <form class="form" action="#" onsubmit="return false;" aria-label="Create account">
+        <label class="visually-hidden" for="email">Email address</label>
+        <input id="email" type="email" placeholder="Email address" required>
+        <label class="visually-hidden" for="password">Password</label>
+        <input id="password" type="password" placeholder="Password" required minlength="8">
+        <button class="btn btn-primary" type="submit">Create account</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; <span id="year"></span> WanderZ — Made with care.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
